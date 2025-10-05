@@ -11,7 +11,7 @@ const SITE = {
   tagline: "Consultant • Creator • Podcast Host",
   currentLocation: "Manhattan, New York, NY",
   lastUpdatedISO: "2025-10-02T12:00:00Z",
-  email: "vattsamehta@gmail.com.com",
+  email: "vattsamehta@gmail.com",
   socials: {
     instagram: "https://www.instagram.com/thevattsanator/?hl=en",
     linkedin: "https://www.linkedin.com/in/vattsa-mehta-676620113/",
