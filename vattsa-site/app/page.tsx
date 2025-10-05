@@ -18,7 +18,6 @@ const SITE = {
     notionJournal: "https://aquatic-production-e6b.notion.site/October-1-2025-282f015c3eff80688ffbfa3b8cecca5f",
   },
   ggr: {
-    site: "https://example.com/gals-getting-rich",
     spotify: "https://open.spotify.com/show/6NZO8HHBoBON5xIXZs9xMm",
     apple: "https://podcasts.apple.com/us/podcast/gals-getting-rich/id1629224294",
   },
@@ -216,21 +215,7 @@ export default function Page() {
             <p className="mt-4">
               Recently, I’ve been focused on banking & capital markets projects, plus growing <span className="font-medium">Gals Getting Rich</span>, a podcast and content series about money and career growth.
             </p>
-          </div>
-          <div className="md:col-span-1">
-            <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 p-4 text-sm">
-              <div className="flex items-center gap-2 text-neutral-600 dark:text-neutral-400">
-                <MapPin className="h-4 w-4" /> <span className="font-medium">Based in</span>
-              </div>
-              <div className="mt-1">{SITE.currentLocation}</div>
-              <div className="mt-4 flex flex-wrap gap-2">
-                <a className="text-sm underline underline-offset-4" href={`mailto:${SITE.email}`}>Email</a>
-                <a className="text-sm underline underline-offset-4" href={SITE.socials.instagram} target="_blank" rel="noreferrer">Instagram</a>
-                <a className="text-sm underline underline-offset-4" href={SITE.socials.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </Section>
 
       <Section id="contact" title="Get in touch">
