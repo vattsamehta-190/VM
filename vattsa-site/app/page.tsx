@@ -56,11 +56,19 @@ export default function Page() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <a href="#home" className="font-semibold text-lg">{SITE.name}</a>
           <nav className="hidden sm:flex items-center gap-6 text-sm">
-  <a href="/journal" className="hover:underline">Journal</a>
-  <a href="/projects" className="hover:underline">Work</a>
-  <a href="/about" className="hover:underline">About</a>
-  <a href="/contact" className="hover:underline">Contact</a>
-</nav>
+  <a href="/journal" className="hover:underline">
+              Journal
+            </a>
+            <a href="/projects" className="hover:underline">
+              Work
+            </a>
+            <a href="/about" className="hover:underline">
+              About
+            </a>
+            <a href="/contact" className="hover:underline">
+              Contact
+            </a>
+          </nav>
         </div>
       </header>
 
@@ -126,20 +134,30 @@ export default function Page() {
                 See my work <ChevronRight className="h-4 w-4" />
               </span>
             </Button>
-            <Button variant="outline" className="rounded-2xl px-4">
-              <span className="inline-flex items-center gap-2">
+            <Button asChild variant="outline" className="rounded-2xl px-4">
+              <a href={`mailto:${SITE.email}`} className="inline-flex items-center gap-2">
                 <Mail className="h-4 w-4" /> Contact
-              </span>
+              </a>
             </Button>
-            <Button variant="ghost" className="rounded-2xl px-3">
-              <span className="inline-flex items-center gap-2">
+            <Button asChild variant="ghost" className="rounded-2xl px-3">
+              <a
+                href={SITE.socials.instagram}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2"
+              >
                 <Instagram className="h-4 w-4" /> Instagram
-              </span>
+              </a>
             </Button>
-            <Button variant="ghost" className="rounded-2xl px-3">
-              <span className="inline-flex items-center gap-2">
+            <Button asChild variant="ghost" className="rounded-2xl px-3">
+              <a
+                href={SITE.socials.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2"
+              >
                 <Linkedin className="h-4 w-4" /> LinkedIn
-              </span>
+              </a>
             </Button>
           </div>
         </div>
@@ -164,7 +182,6 @@ export default function Page() {
                   A personal-finance podcast with candid, upbeat conversations about money, careers, side hustles, and leveling up — served with humor and practical takeaways.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  </a>
                   <a href={SITE.ggr.spotify} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm underline underline-offset-4">
                     Spotify <ExternalLink className="h-3.5 w-3.5" />
                   </a>
@@ -213,7 +230,19 @@ export default function Page() {
             <p className="mt-4">
               Recently, I’ve been focused on banking & capital markets projects, plus growing <span className="font-medium">Gals Getting Rich</span>, a podcast and content series about money and career growth.
             </p>
-        
+        </div>
+
+          <Card className="rounded-2xl border border-neutral-200 dark:border-neutral-800">
+            <CardContent className="p-6 space-y-3 text-sm text-neutral-600 dark:text-neutral-400">
+              <div className="font-semibold text-neutral-900 dark:text-neutral-100">Currently</div>
+              <ul className="space-y-2">
+                <li>📍 Based in {SITE.currentLocation}</li>
+                <li>🎙️ Hosting <span className="font-medium">Gals Getting Rich</span></li>
+                <li>🧠 Consulting on banking & capital markets</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
       </Section>
 
       <Section id="contact" title="Get in touch">
