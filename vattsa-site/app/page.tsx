@@ -15,7 +15,7 @@ const SITE = {
   socials: {
     instagram: "https://www.instagram.com/thevattsanator/?hl=en",
     linkedin: "https://www.linkedin.com/in/vattsa-mehta-676620113/",
-    notionJournal: "https://www.notion.so/example-october-2025-update",
+    notionJournal: "https://aquatic-production-e6b.notion.site/October-1-2025-282f015c3eff80688ffbfa3b8cecca5f",
   },
   ggr: {
     site: "https://example.com/gals-getting-rich",
