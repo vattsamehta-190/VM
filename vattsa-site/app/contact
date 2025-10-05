@@ -1,0 +1,20 @@
+import { Mail, Instagram, Linkedin } from "lucide-react";
+
+export default function ContactPage() {
+  return (
+    <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <h1 className="text-3xl font-semibold tracking-tight mb-6">Get in touch</h1>
+      <div className="space-y-3 text-sm">
+        <a href="mailto:vattsamehta@gmail.com" className="inline-flex items-center gap-2 underline">
+          <Mail className="h-4 w-4" /> vattsamehta@gmail.com
+        </a>
+        <a href="https://www.instagram.com/thevattsanator/?hl=en" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 underline">
+          <Instagram className="h-4 w-4" /> Instagram
+        </a>
+        <a href="https://www.linkedin.com/in/vattsa-mehta-676620113/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 underline">
+          <Linkedin className="h-4 w-4" /> LinkedIn
+        </a>
+      </div>
+    </main>
+  );
+}
