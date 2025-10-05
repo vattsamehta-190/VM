@@ -164,8 +164,6 @@ export default function Page() {
                   A personal-finance podcast with candid, upbeat conversations about money, careers, side hustles, and leveling up — served with humor and practical takeaways.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  <a href={SITE.ggr.site} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm underline underline-offset-4">
-                    Website <ExternalLink className="h-3.5 w-3.5" />
                   </a>
                   <a href={SITE.ggr.spotify} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm underline underline-offset-4">
                     Spotify <ExternalLink className="h-3.5 w-3.5" />
