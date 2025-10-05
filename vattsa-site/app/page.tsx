@@ -57,11 +57,11 @@ export default function Page() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <a href="#home" className="font-semibold text-lg">{SITE.name}</a>
           <nav className="hidden sm:flex items-center gap-6 text-sm">
-            <a href="#journal" className="hover:underline">Journal</a>
-            <a href="#work" className="hover:underline">Work</a>
-            <a href="#about" className="hover:underline">About</a>
-            <a href="#contact" className="hover:underline">Contact</a>
-          </nav>
+  <a href="/journal" className="hover:underline">Journal</a>
+  <a href="/projects" className="hover:underline">Work</a>
+  <a href="/about" className="hover:underline">About</a>
+  <a href="/contact" className="hover:underline">Contact</a>
+</nav>
         </div>
       </header>
 
