@@ -15,10 +15,9 @@ const SITE = {
   socials: {
     instagram: "https://www.instagram.com/thevattsanator/?hl=en",
     linkedin: "https://www.linkedin.com/in/vattsa-mehta-676620113/",
-    notionJournal: "https://www.notion.so/October-1-2025-282f015c3eff80688ffbfa3b8cecca5f?source=copy_link",
+    notionJournal: "https://aquatic-production-e6b.notion.site/October-1-2025-282f015c3eff80688ffbfa3b8cecca5f",
   },
   ggr: {
-    site: "https://example.com/gals-getting-rich",
     spotify: "https://open.spotify.com/show/6NZO8HHBoBON5xIXZs9xMm",
     apple: "https://podcasts.apple.com/us/podcast/gals-getting-rich/id1629224294",
   },
