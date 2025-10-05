@@ -1,0 +1,17 @@
+export default function AboutPage() {
+  return (
+    <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-neutral-700 dark:text-neutral-300 leading-relaxed">
+      <h1 className="text-3xl font-semibold tracking-tight mb-6">About</h1>
+      <p>
+        I’m Vattsa Mehta, a management consultant and creator who loves building clear, useful things: decks that persuade,
+        products that ship, and content that helps people level up. I live by my top values of Exploration, Iteration, and
+        Connection. Exploration is what I do; I do it through iteration; and I do it to create more connection. Outside of work,
+        I am prioritizing physical health, (re)building community, and cultivating creativity through interesting weekend projects.
+      </p>
+      <p className="mt-4">
+        Recently, I’ve been focused on banking & capital markets projects, plus growing <span className="font-medium">Gals Getting Rich</span>,
+        a podcast and content series about money and career growth.
+      </p>
+    </main>
+  );
+}
