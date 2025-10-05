@@ -1,0 +1,32 @@
+"use client";
+import { ArrowRight } from "lucide-react";
+
+const JOURNAL = [
+  {
+    title: "October 2025 Update",
+    sub: "more on who I am and who I am becoming",
+    href: "https://www.notion.so/October-1-2025-282f015c3eff80688ffbfa3b8cecca5f?source=copy_link",
+  },
+];
+
+export default function JournalPage() {
+  return (
+    <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <h1 className="text-3xl font-semibold tracking-tight mb-6">Journal</h1>
+      <div className="space-y-3">
+        {JOURNAL.map((j) => (
+          <a key={j.href} href={j.href} target="_blank" rel="noreferrer"
+             className="block rounded-2xl border border-neutral-200 dark:border-neutral-800 p-5 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition">
+            <div className="flex items-center justify-between">
+              <div className="leading-tight">
+                <div className="font-medium">⭐ {j.title}</div>
+                <div className="text-sm text-neutral-500">{j.sub}</div>
+              </div>
+              <ArrowRight className="w-5 h-5" />
+            </div>
+          </a>
+        ))}
+      </div>
+    </main>
+  );
+}
